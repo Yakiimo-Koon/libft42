@@ -1,27 +1,33 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libft.h                                            :+:      :+:    :+:   */
+/*   ft_strdup.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: kevin <kevin@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/11/12 18:04:17 by kevin             #+#    #+#             */
-/*   Updated: 2023/11/12 18:44:07 by kevin            ###   ########.fr       */
+/*   Created: 2023/11/12 18:14:01 by kevin             #+#    #+#             */
+/*   Updated: 2023/11/12 18:18:22 by kevin            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIBFT_H
-#define LIBFT_H
+#include "libft.h"
 
-# include <stdlib.h>
-# include <unistd.h>
+char *ft_strdup(char *src)
+{
+	char *dest;
+	int	len;
 
-char *strchr(const char *str, int searchedChar);
-char *strrchr(const char *str, int searchedChar);
-int	ft_strncmp(const char *s1, const char *s2, unsigned int n);
-int ft_atoi(char *str);
-char *ft_strdup(char *src);
-void *ft_memset(void* str, int c, size_t n);
-void	ft_bzero(void *str, size_t n);
-
-#endif
+	len = 0;
+	while (src[len])
+		len++;
+	dest = (char *)malloc(sizeof(char) * (len + 1));
+	if (!dest)
+		return (NULL);
+	dest[len] = '\0';
+	while (len >= 0)
+	{
+		dest[len] = src[len];
+		len--;
+	}
+	return (dest);
+}

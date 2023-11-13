@@ -6,11 +6,12 @@
 #    By: kevin <kevin@student.42.fr>                +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/11/12 17:50:49 by kevin             #+#    #+#              #
-#    Updated: 2023/11/12 18:11:07 by kevin            ###   ########.fr        #
+#    Updated: 2023/11/12 18:44:18 by kevin            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-SRCS	=	ft_strncmp.c ft_strchr.c ftstrrchr.c ft_atoi.c
+SRCS	=	ft_strncmp.c ft_strchr.c ft_strrchr.c ft_atoi.c\
+			ft_strdup.c ft_memset.c ft_bzero.c
 
 OBJS	= $(SRCS:.c=.o)
 
