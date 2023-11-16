@@ -3,12 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strrchr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: kevin <kevin@student.42.fr>                +#+  +:+       +#+        */
+/*   By: klefranc <klefranc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/10 11:19:50 by kevin             #+#    #+#             */
-/*   Updated: 2023/11/12 18:03:33 by kevin            ###   ########.fr       */
+/*   Updated: 2023/11/16 07:59:54 by klefranc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 char *strrchr(const char *str, int searchedChar)
 {
@@ -25,11 +27,10 @@ char *strrchr(const char *str, int searchedChar)
 		}
 		i--;
 	}
-	if (searchedChar == '\0')
-		return 0;
+	return (NULL);
 }
 
-#include <stdio.h>
+/* #include <stdio.h>
 
 int main() {
     const char* myString = "Hello, World!";
@@ -44,4 +45,4 @@ int main() {
     }
 
     return 0;
-}
+} */

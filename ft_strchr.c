@@ -3,14 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: kevin <kevin@student.42.fr>                +#+  +:+       +#+        */
+/*   By: klefranc <klefranc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/10 11:13:05 by kevin             #+#    #+#             */
-/*   Updated: 2023/11/10 11:19:24 by kevin            ###   ########.fr       */
+/*   Updated: 2023/11/16 07:57:41 by klefranc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char *strchr(const char *str, int searchedChar)
+#include "libft.h"
+
+/* char *ft_strchr(const char *str, int searchedChar)
 {
 	while (*str != '\0')
 	{
@@ -24,9 +26,27 @@ char *strchr(const char *str, int searchedChar)
 	{
 		return 0;
 	}
+} */
+
+char	*ft_strchr(const char *s, int c)
+{
+	int	i;
+
+	if (!s)
+		return (NULL);
+	i = 0;
+	while (s[i])
+	{
+		if (s[i] == (char)c)
+			return ((char*)(s + i));
+		i++;
+	}
+	if (s[i] == (char)c)
+		return ((char*)(s + i));
+	return (NULL);
 }
 
-#include <stdio.h>
+/* #include <stdio.h>
 
 int main() {
     const char* myString = "Hello, World!";
@@ -41,4 +61,4 @@ int main() {
     }
 
     return 0;
-}
+} */

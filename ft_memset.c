@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memset.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: kevin <kevin@student.42.fr>                +#+  +:+       +#+        */
+/*   By: klefranc <klefranc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/11/12 18:23:01 by kevin             #+#    #+#             */
-/*   Updated: 2023/11/12 18:43:08 by kevin            ###   ########.fr       */
+/*   Created: 2023/11/16 07:41:12 by klefranc          #+#    #+#             */
+/*   Updated: 2023/11/16 08:00:28 by klefranc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ void * ft_memset(void* str, int c, size_t n)
 	return (str);
 }
 
-int main() {
+/* int main() {
     char monTableau[20];
 
     ft_memset(monTableau, 'Y', sizeof(monTableau));
@@ -30,4 +30,4 @@ int main() {
         printf("%c ", monTableau[i]);
     }
     return 0;
-}
+} */

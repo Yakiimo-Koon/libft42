@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memmove.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: kevin <kevin@student.42.fr>                +#+  +:+       +#+        */
+/*   By: klefranc <klefranc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/11/13 15:50:15 by kevin             #+#    #+#             */
-/*   Updated: 2023/11/13 16:26:36 by kevin            ###   ########.fr       */
+/*   Created: 2023/11/16 07:41:25 by klefranc          #+#    #+#             */
+/*   Updated: 2023/11/16 08:00:25 by klefranc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,7 +44,7 @@ void	*ft_memmove(void *dest, const void *src, size_t size)
 	return (dest);
 }
 
-#include <stdio.h>
+/* #include <stdio.h>
 #include <string.h>
 
 int main() {
@@ -69,7 +69,7 @@ int main() {
 
     return 0;
 }
-
+ */
 
 
 

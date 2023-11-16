@@ -1,28 +1,42 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strncmp.c                                       :+:      :+:    :+:   */
+/*   ft_memcpy.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: klefranc <klefranc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/11/10 11:05:55 by kevin             #+#    #+#             */
-/*   Updated: 2023/11/16 07:40:43 by klefranc         ###   ########.fr       */
+/*   Created: 2023/11/16 07:41:19 by klefranc          #+#    #+#             */
+/*   Updated: 2023/11/16 08:00:26 by klefranc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_strncmp(const char *s1, const char *s2, unsigned int n)
+void	*ft_memcpy(void *dest, const void *src, size_t size)
 {
-	int i;
+	char *d = (char*)dest;
+	const char *s = (const char*)src;
 
-	i = 0;
-	while (s1[i] && s1[i] == s2[i] && n > 0)
+	while (size > 0)
 	{
-		i++;
-		n--;
+		*d = *s;
+		d++;
+		s++;
+		size--;
 	}
-	if (n == 0)
-		return (0);
-	return (s1[i] - s2[i]);
+	return (dest);
 }
+
+/*  #include <stdio.h>
+int main()
+{
+	const char src[] = "Hello, my memcpy!";
+	char dest[20];
+
+	ft_memcpy(dest, src, sizeof(src));
+	dest[sizeof(src) - 1] = '\0';
+
+	printf("Source: %s\n", src);
+    printf("Destination: %s\n", dest);
+	return 0;
+} */

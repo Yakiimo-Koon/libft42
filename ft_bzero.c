@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_bzero.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: kevin <kevin@student.42.fr>                +#+  +:+       +#+        */
+/*   By: klefranc <klefranc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/11/12 18:40:54 by kevin             #+#    #+#             */
-/*   Updated: 2023/11/12 18:43:31 by kevin            ###   ########.fr       */
+/*   Created: 2023/11/16 07:41:38 by klefranc          #+#    #+#             */
+/*   Updated: 2023/11/16 08:00:35 by klefranc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ void	ft_bzero(void *str, size_t n)
 	}
 }
 
-int main() 
+/* int main() 
 {
     char myArray[20];
 
@@ -31,4 +31,4 @@ int main()
     }
 
     return 0;
-}
+} */
