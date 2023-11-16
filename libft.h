@@ -6,7 +6,7 @@
 /*   By: klefranc <klefranc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/12 18:04:17 by kevin             #+#    #+#             */
-/*   Updated: 2023/11/16 07:45:54 by klefranc         ###   ########.fr       */
+/*   Updated: 2023/11/16 09:08:55 by klefranc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,5 +32,7 @@ void	*ft_memmove(void *dest, const void *src, size_t size);
 int	ft_strlen(const char *str);
 int	ft_tolower(int c);
 int	ft_toupper(int c);
+size_t ft_strlcpy(char *dest, const char *src, size_t size);
+size_t ft_strlcat(char *dest, const char *src, size_t size);
 
 #endif
