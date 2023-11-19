@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: klefranc <klefranc@student.42.fr>          +#+  +:+       +#+        */
+/*   By: kevin <kevin@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/16 09:20:36 by klefranc          #+#    #+#             */
-/*   Updated: 2023/11/16 09:38:21 by klefranc         ###   ########.fr       */
+/*   Updated: 2023/11/19 11:12:02 by kevin            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,7 @@ void	*ft_memchr(const void *memoryBlock, int SearchedChar, size_t size)
 	return (NULL);
 }
 
-int main() {
+/* int main() {
     // Example usage of ft_memchr
     const char* str = "Hello, World!";
     char target = 'W';
@@ -44,4 +44,4 @@ int main() {
     }
 
     return 0;
-}
+} */

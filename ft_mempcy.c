@@ -6,7 +6,7 @@
 /*   By: kevin <kevin@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/13 15:33:52 by kevin             #+#    #+#             */
-/*   Updated: 2023/11/13 15:43:10 by kevin            ###   ########.fr       */
+/*   Updated: 2023/11/19 11:12:14 by kevin            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ void	*ft_memcpy(void *dest, const void *src, size_t size)
 	return (dest);
 }
 
- #include <stdio.h>
+/*  #include <stdio.h>
 int main()
 {
 	const char src[] = "Hello, my memcpy!";
@@ -39,4 +39,4 @@ int main()
 	printf("Source: %s\n", src);
     printf("Destination: %s\n", dest);
 	return 0;
-}
+} */

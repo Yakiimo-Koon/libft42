@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlcat.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: klefranc <klefranc@student.42.fr>          +#+  +:+       +#+        */
+/*   By: kevin <kevin@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/16 09:00:13 by klefranc          #+#    #+#             */
-/*   Updated: 2023/11/16 09:09:10 by klefranc         ###   ########.fr       */
+/*   Updated: 2023/11/19 11:12:52 by kevin            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ size_t ft_strlcat(char *dest, const char *src, size_t size)
 	return (dest_len + remaining);
 }
 
-#include <stdio.h>
+/* #include <stdio.h>
 
 int main()
 {
@@ -39,4 +39,4 @@ int main()
     printf("Longueur de la chaîne concaténée : %zu\n", length);
 
     return 0;
-}
+} */

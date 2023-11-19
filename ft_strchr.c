@@ -3,30 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: klefranc <klefranc@student.42.fr>          +#+  +:+       +#+        */
+/*   By: kevin <kevin@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/10 11:13:05 by kevin             #+#    #+#             */
-/*   Updated: 2023/11/16 07:57:41 by klefranc         ###   ########.fr       */
+/*   Updated: 2023/11/19 11:12:25 by kevin            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
-/* char *ft_strchr(const char *str, int searchedChar)
-{
-	while (*str != '\0')
-	{
-		if (*str == searchedChar)
-		{
-			return (char*)str;
-		}
-		str++;
-	}
-	if (searchedChar == '\0')
-	{
-		return 0;
-	}
-} */
 
 char	*ft_strchr(const char *s, int c)
 {
