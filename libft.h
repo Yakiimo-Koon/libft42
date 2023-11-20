@@ -6,7 +6,7 @@
 /*   By: kevin <kevin@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/12 18:04:17 by kevin             #+#    #+#             */
-/*   Updated: 2023/11/19 13:53:28 by kevin            ###   ########.fr       */
+/*   Updated: 2023/11/20 15:10:39 by kevin            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,5 +34,6 @@ int	ft_tolower(int c);
 int	ft_toupper(int c);
 size_t ft_strlcpy(char *dest, const char *src, size_t size);
 size_t ft_strlcat(char *dest, const char *src, size_t size);
+void	ft_putchar_fd(char c, int fd);
 
 #endif

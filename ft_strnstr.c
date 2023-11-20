@@ -6,7 +6,7 @@
 /*   By: kevin <kevin@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/19 13:07:08 by kevin             #+#    #+#             */
-/*   Updated: 2023/11/19 14:51:11 by kevin            ###   ########.fr       */
+/*   Updated: 2023/11/20 12:23:16 by kevin            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,7 +34,7 @@ char *ft_strnstr(const char *str, const char *needle, size_t len)
 	return (NULL);
 }
 
-#include <stdio.h>
+/* #include <stdio.h>
 
 int main(void)
 {
@@ -54,4 +54,4 @@ int main(void)
     }
 
     return 0;
-}
+} */

@@ -6,11 +6,23 @@
 /*   By: kevin <kevin@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/20 11:50:17 by kevin             #+#    #+#             */
-/*   Updated: 2023/11/20 12:12:11 by kevin            ###   ########.fr       */
+/*   Updated: 2023/11/20 12:45:47 by kevin            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+// #include "libft.h"
+
+#include <stdlib.h>
+
+int	ft_strlen(char *str)
+{
+	int	i;
+
+	i = 0;
+	while (str[i])
+		i++;
+	return (i);
+}
 
 int	get_malloc_size(int size, char **strs, char *sep)
 {
@@ -27,11 +39,26 @@ int	get_malloc_size(int size, char **strs, char *sep)
 	return (res + 1);
 }
 
+char	*ft_strcat(char *dest, char *src)
+{
+	int	i;
+	int	destlen;
+
+	i = 0;
+	destlen = ft_strlen(dest);
+	while (src[i])
+	{
+		dest[destlen + i] = src[i];
+		i++;
+	}
+	dest[destlen + i] = 0;
+	return (dest);
+}
+
 char	*ft_strjoin(int size, char **strs, char *sep)
 {
 	char	*res;
 	int		i;
-	size_t	offset;
 
 	res = malloc(get_malloc_size(size, strs, sep) * sizeof(char));
 	if (!res)
@@ -40,18 +67,14 @@ char	*ft_strjoin(int size, char **strs, char *sep)
 	if (size == 0)
 		return (res);
 	i = 0;
-	offset = 0;
 	while (i < size)
 	{
-		ft_strlcat(res + offset, strs[i], get_malloc_size(size, strs, sep) - offset);
-		offset += ft_strlen(strs[i]);
+		ft_strcat(res, strs[i]);
 		if (i != size - 1)
-		{
-			ft_strlcat(res + offset, sep, get_malloc_size(size, strs, sep) - offset);
-			offset += ft_strlen(sep);
-		}
+			ft_strcat(res, sep);
 		i++;
 	}
+	res[ft_strlen(res)] = 0;
 	return (res);
 }
 
