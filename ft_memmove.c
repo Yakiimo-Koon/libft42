@@ -6,42 +6,37 @@
 /*   By: klefranc <klefranc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/16 07:41:25 by klefranc          #+#    #+#             */
-/*   Updated: 2023/11/16 08:00:25 by klefranc         ###   ########.fr       */
+/*   Updated: 2023/11/23 12:50:12 by klefranc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_memmove(void *dest, const void *src, size_t size)
+void	*ft_memmove(void *dst, const void *src, size_t len)
 {
-	if (dest == src || size == 0)
-		return (dest);
-	if (dest < src || dest >= (char*)src + size)
-	{
-		char *d = (char*)dest;
-		const char *s = (const char*)src;
+	int	i;
 
-		while (size > 0)
+	if (!dst || !src)
+		return (NULL);
+	if (dst > src)
+	{
+		i = (int)len - 1;
+		while (i >= 0)
 		{
-			*d = *s;
-			d++;
-			s++;
-			size--;
+			*(char *)(dst + i) = *(char *)(src + i);
+			i--;
 		}
 	}
 	else
 	{
-		char *d = (char*)dest + (size - 1);
-		const char *s = (const char*)src + (size - 1);
-
-		while (size > 0)
+		i = 0;
+		while (i < (int)len)
 		{
-			d--;
-			s--;
-			size--;
+			*(char *)(dst + i) = *(char *)(src + i);
+			i++;
 		}
 	}
-	return (dest);
+	return (dst);
 }
 
 /* #include <stdio.h>
@@ -70,7 +65,3 @@ int main() {
     return 0;
 }
  */
-
-
-
-

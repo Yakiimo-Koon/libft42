@@ -1,35 +1,35 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memset.c                                        :+:      :+:    :+:   */
+/*   ft_strtrim.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: klefranc <klefranc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/11/16 07:41:12 by klefranc          #+#    #+#             */
-/*   Updated: 2023/11/23 13:34:37 by klefranc         ###   ########.fr       */
+/*   Created: 2023/11/21 17:00:15 by klefranc          #+#    #+#             */
+/*   Updated: 2023/11/23 13:05:41 by klefranc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_memset(void *str, int c, size_t n)
+char	*ft_strtrim(char const *s1, char const *set)
 {
-	unsigned char	*p;
+	size_t	front;
+	size_t	rear;
+	char	*str;
 
-	p = str;
-	while (n-- > 0)
+	str = 0;
+	if (s1 != 0 && set != 0)
 	{
-		*p++ = (unsigned char)c;
+		front = 0;
+		rear = ft_strlen(s1);
+		while (s1[front] && ft_strchr(set, s1[front]))
+			front++;
+		while (s1[rear - 1] && ft_strchr(set, s1[rear - 1]) && rear > front)
+			rear--;
+		str = (char *)malloc(sizeof(char) * (rear - front + 1));
+		if (str)
+			ft_strlcpy(str, &s1[front], rear - front + 1);
 	}
 	return (str);
 }
-
-/* int main() {
-    char monTableau[20];
-
-    ft_memset(monTableau, 'Y', sizeof(monTableau));
-    for (int i = 0; i < 15; i++) {
-        printf("%c ", monTableau[i]);
-    }
-    return 0;
-} */

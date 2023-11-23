@@ -6,16 +6,16 @@
 /*   By: klefranc <klefranc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/16 07:41:03 by klefranc          #+#    #+#             */
-/*   Updated: 2023/11/16 07:41:05 by klefranc         ###   ########.fr       */
+/*   Updated: 2023/11/23 12:54:40 by klefranc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char *ft_strdup(char *src)
+char	*ft_strdup(char *src)
 {
-	char *dest;
-	int	len;
+	char	*dest;
+	int		len;
 
 	len = 0;
 	while (src[len])

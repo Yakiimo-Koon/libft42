@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strjoin.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: kevin <kevin@student.42.fr>                +#+  +:+       +#+        */
+/*   By: klefranc <klefranc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/20 11:50:17 by kevin             #+#    #+#             */
-/*   Updated: 2023/11/20 12:45:47 by kevin            ###   ########.fr       */
+/*   Updated: 2023/11/21 16:12:29 by klefranc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -78,10 +78,10 @@ char	*ft_strjoin(int size, char **strs, char *sep)
 	return (res);
 }
 
-#include <stdio.h>
+/* #include <stdio.h>
 
 int main(int argc, char **argv)
 {
 	printf("%s\n", ft_strjoin(argc, argv, "---"));
 	return 0;
-}
+} */

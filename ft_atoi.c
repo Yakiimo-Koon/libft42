@@ -6,29 +6,34 @@
 /*   By: klefranc <klefranc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/16 07:39:44 by klefranc          #+#    #+#             */
-/*   Updated: 2023/11/16 08:01:02 by klefranc         ###   ########.fr       */
+/*   Updated: 2023/11/23 14:24:22 by klefranc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int ft_atoi(char *str)
+int	ft_atoi(const char *str)
 {
-	int i = 0;
-	int sign = 1;
-	int res = 0;
+	int			i;
+	int			sgn;
+	long long	res;
 
-	while ((str[i] >= 9 && str[i] <= 13) || str[i] == ' ')
+	i = 0;
+	sgn = 1;
+	res = 0;
+	while (str[i] == ' ' || ((9 <= str[i]) && (str[i] <= 13)))
 		i++;
-	if (str[i] == '+' || str[i] == '-')
+	if (str[i] == '+')
+		i++;
+	else if (str[i] == '-')
 	{
-		if (str[i] == '-')
-			sign *= -1;
+		sgn = -1;
 		i++;
 	}
-	while (str[i] >= '0' && str[i] >= '9')
+	while (str[i] && ('0' <= str[i]) && (str[i] <= '9'))
 	{
-		res = res * 10 + str[i] - 0;
+		res = (res * 10) + (str[i] - '0');
+		i++;
 	}
-	return (res + sign);
+	return (sgn * res);
 }

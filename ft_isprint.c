@@ -6,13 +6,13 @@
 /*   By: klefranc <klefranc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/08 16:31:25 by klefranc          #+#    #+#             */
-/*   Updated: 2023/11/16 07:40:28 by klefranc         ###   ########.fr       */
+/*   Updated: 2023/11/23 13:15:11 by klefranc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int ft_isprint(int c)
+int	ft_isprint(int c)
 {
 	return (c >= ' ' && c <= '~');
 }
