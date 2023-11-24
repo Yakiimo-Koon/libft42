@@ -6,7 +6,7 @@
 #    By: klefranc <klefranc@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/11/12 17:50:49 by kevin             #+#    #+#              #
-#    Updated: 2023/11/24 15:46:07 by klefranc         ###   ########.fr        #
+#    Updated: 2023/11/24 16:03:31 by klefranc         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -49,5 +49,8 @@ fclean:	clean;
 
 re:	fclean all
 
+so:
+	$(CC) -nostartfiles -fPIC $(CFLAGS) $(SRCS)
+	gcc -nostartfiles -shared -o libft.so $(OBJS)
 
 .PHONY: all clean fclean re
