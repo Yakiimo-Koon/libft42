@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: kevin <kevin@student.42.fr>                +#+  +:+       +#+         #
+#    By: klefranc <klefranc@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/11/12 17:50:49 by kevin             #+#    #+#              #
-#    Updated: 2023/11/23 11:12:27 by kevin            ###   ########.fr        #
+#    Updated: 2023/11/24 15:46:07 by klefranc         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -48,5 +48,6 @@ fclean:	clean;
 		rm -f ${LIB}
 
 re:	fclean all
+
 
 .PHONY: all clean fclean re
