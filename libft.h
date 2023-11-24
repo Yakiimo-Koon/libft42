@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: kevin <kevin@student.42.fr>                +#+  +:+       +#+        */
+/*   By: klefranc <klefranc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/12 18:04:17 by kevin             #+#    #+#             */
-/*   Updated: 2023/11/23 11:11:07 by kevin            ###   ########.fr       */
+/*   Updated: 2023/11/24 14:48:54 by klefranc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,7 +47,7 @@ int	ft_strncmp(const char *s1, const char *s2, unsigned int n);
 char *ft_strnstr(const char *str, const char *needle, size_t len);
 char *ft_strrchr(const char *str, int searchedChar);
 char	*ft_strtrim(char const *s1, char const *set);
-char *ft_substr(char const *s, unsigned int start, size_t len);
+char	*ft_substr(const char *s, unsigned int start, size_t len);
 int	ft_tolower(int c);
 int	ft_toupper(int c);
 
