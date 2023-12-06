@@ -6,7 +6,7 @@
 /*   By: klefranc <klefranc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/12 18:04:17 by kevin             #+#    #+#             */
-/*   Updated: 2023/11/24 14:48:54 by klefranc         ###   ########.fr       */
+/*   Updated: 2023/12/06 12:49:50 by klefranc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,7 +43,7 @@ size_t ft_strlcat(char *dest, const char *src, size_t size);
 size_t ft_strlcpy(char *dest, const char *src, size_t size);
 int	ft_strlen(const char *str);
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char));
-int	ft_strncmp(const char *s1, const char *s2, unsigned int n);
+int	ft_strncmp(const char *s1, const char *s2, size_t n);
 char *ft_strnstr(const char *str, const char *needle, size_t len);
 char *ft_strrchr(const char *str, int searchedChar);
 char	*ft_strtrim(char const *s1, char const *set);

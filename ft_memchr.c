@@ -6,7 +6,7 @@
 /*   By: klefranc <klefranc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/21 16:33:00 by klefranc          #+#    #+#             */
-/*   Updated: 2023/11/23 13:32:34 by klefranc         ###   ########.fr       */
+/*   Updated: 2023/12/06 12:22:34 by klefranc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,20 +14,20 @@
 
 void	*ft_memchr(const void *s, int c, size_t n)
 {
-	size_t		i;
-	char		*string;
+	unsigned char *ptr;
+	unsigned char chr;
+	size_t i;
 
-	if (s == NULL)
-		return (NULL);
+	ptr = (unsigned char *)s;
+	chr = (unsigned char)c;
 	i = 0;
-	string = (void *)s;
 	while (i < n)
 	{
-		if (string[i] == (char)c)
-			return (&string[i]);
+		if (*(ptr + i) == chr)
+			return (ptr + i);
 		i++;
 	}
-	return (NULL);
+	return (0);
 }
 
 /* void	*ft_memchr(const void *memoryBlock, int SearchedChar, size_t size)

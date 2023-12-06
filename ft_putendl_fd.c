@@ -6,7 +6,7 @@
 /*   By: klefranc <klefranc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/20 15:26:09 by kevin             #+#    #+#             */
-/*   Updated: 2023/11/23 12:53:11 by klefranc         ###   ########.fr       */
+/*   Updated: 2023/12/06 12:52:36 by klefranc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,8 @@ void	ft_putendl_fd(char *s, int fd)
 	int	i;
 
 	i = 0;
+	if (fd < 0 || !s)
+		return ;
 	while (s[i] != '\0')
 	{
 		write(fd, &s[i], 1);
