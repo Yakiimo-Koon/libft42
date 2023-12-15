@@ -6,7 +6,7 @@
 /*   By: klefranc <klefranc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/21 16:33:00 by klefranc          #+#    #+#             */
-/*   Updated: 2023/12/06 12:22:34 by klefranc         ###   ########.fr       */
+/*   Updated: 2023/12/15 10:11:58 by klefranc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,9 @@
 
 void	*ft_memchr(const void *s, int c, size_t n)
 {
-	unsigned char *ptr;
-	unsigned char chr;
-	size_t i;
+	unsigned char	*ptr;
+	unsigned char	chr;
+	size_t			i;
 
 	ptr = (unsigned char *)s;
 	chr = (unsigned char)c;

@@ -6,7 +6,7 @@
 /*   By: klefranc <klefranc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/10 11:19:50 by kevin             #+#    #+#             */
-/*   Updated: 2023/11/23 14:35:04 by klefranc         ###   ########.fr       */
+/*   Updated: 2023/12/15 10:07:33 by klefranc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,11 +20,11 @@ char	*ft_strrchr(const char *s, int c)
 	while (i > 0)
 	{
 		if (s[i] == (char)c)
-			return ((char*)s + i);
+			return ((char *)s + i);
 		i--;
 	}
 	if (s[i] == (char)c)
-		return ((char*)s + i);
+		return ((char *)s + i);
 	return (NULL);
 }
 

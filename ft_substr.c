@@ -6,23 +6,24 @@
 /*   By: klefranc <klefranc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/20 12:46:43 by kevin             #+#    #+#             */
-/*   Updated: 2023/11/24 15:58:13 by klefranc         ###   ########.fr       */
+/*   Updated: 2023/12/15 10:07:04 by klefranc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_substr(char const* s, unsigned int start, size_t len)
+char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
 	size_t	i;
 	size_t	j;
-	char* sub;
+	char	*sub;
 
 	i = 0;
 	j = 0;
 	if (!s)
 		return (NULL);
-	if (!(sub = (char*)malloc(sizeof(char) * (len + 1))))
+	sub = (char *)malloc(sizeof(char) * (len + 1));
+	if (!sub)
 		return (NULL);
 	while (s[i])
 	{

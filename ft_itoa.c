@@ -6,7 +6,7 @@
 /*   By: klefranc <klefranc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/21 16:32:23 by klefranc          #+#    #+#             */
-/*   Updated: 2023/11/24 15:27:25 by klefranc         ###   ########.fr       */
+/*   Updated: 2023/12/15 10:13:05 by klefranc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,11 +32,11 @@ size_t	n_len(int n)
 	return (len);
 }
 
-char			*ft_itoa(int n)
+char	*ft_itoa(int n)
 {
-	char		*a;
-	unsigned	un;
-	size_t		len;
+	char			*a;
+	unsigned int	un;
+	size_t			len;
 
 	len = n_len(n);
 	if (n < 0)

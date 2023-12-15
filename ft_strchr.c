@@ -6,7 +6,7 @@
 /*   By: klefranc <klefranc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/10 11:13:05 by kevin             #+#    #+#             */
-/*   Updated: 2023/12/06 12:04:06 by klefranc         ###   ########.fr       */
+/*   Updated: 2023/12/15 10:10:14 by klefranc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ char	*ft_strchr(const char *s, int c)
 	char	*ptr;
 	int		i;
 
-	ptr = (char*)s;
+	ptr = (char *)s;
 	i = 0;
 	while (*(ptr + i))
 	{
@@ -29,7 +29,6 @@ char	*ft_strchr(const char *s, int c)
 		return (ptr + i);
 	return (0);
 }
-
 
 /* #include <stdio.h>
 

@@ -6,15 +6,15 @@
 /*   By: klefranc <klefranc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/16 07:41:38 by klefranc          #+#    #+#             */
-/*   Updated: 2023/11/23 13:47:47 by klefranc         ###   ########.fr       */
+/*   Updated: 2023/12/15 10:04:00 by klefranc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void ft_bzero(void *b, size_t length)
+void	ft_bzero(void *b, size_t length)
 {
-    ft_memset((void *) b, 0, (size_t) length);
+	ft_memset((void *)b, 0, (size_t)length);
 }
 
 /* void	ft_bzero(void *str, size_t n)
