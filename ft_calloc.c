@@ -6,28 +6,23 @@
 /*   By: klefranc <klefranc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/21 16:32:40 by klefranc          #+#    #+#             */
-/*   Updated: 2023/12/15 10:14:45 by klefranc         ###   ########.fr       */
+/*   Updated: 2023/12/15 11:48:49 by klefranc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_calloc(size_t nitems, size_t size)
+void	*ft_calloc(size_t count, size_t size)
 {
-	void	*addr;
+	void	*element;
 
-	if (nitems == 0 || size == 0)
-	{
-		nitems = 1;
-		size = 1;
-	}
-	addr = malloc(nitems * size);
-	if (!addr)
-	{
+	if (size != 0 && count > (size_t) - 1 / size)
 		return (NULL);
-	}
-	ft_bzero(addr, nitems * size);
-	return (addr);
+	element = malloc(count * size);
+	if (!element)
+		return (NULL);
+	ft_bzero(element, (count * size));
+	return (element);
 }
 
 /* void	*ft_calloc(size_t count, size_t size)

@@ -6,7 +6,7 @@
 /*   By: klefranc <klefranc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/16 09:00:13 by klefranc          #+#    #+#             */
-/*   Updated: 2023/12/06 12:48:49 by klefranc         ###   ########.fr       */
+/*   Updated: 2023/12/15 11:51:32 by klefranc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,24 +14,27 @@
 
 size_t	ft_strlcat(char *dest, const char *src, size_t size)
 {
-	size_t	j;
-	size_t	dest_length;
-	size_t	source_length;
+	size_t	i;
+	size_t	dest_len;
+	size_t	src_len;
 
-	if (size == 0)
+	if ((dest == NULL || src == NULL) && !size)
 		return (0);
-	j = 0;
-	dest_length = ft_strlen(dest);
-	source_length = ft_strlen(src);
-	if (size <= dest_length)
-		return (source_length + size);
-	while (src[j] && size - 1 > dest_length + j)
+	dest_len = ft_strlen(dest);
+	src_len = ft_strlen(src);
+	i = 0;
+	if (size < dest_len + 1)
+		return (size + src_len);
+	else if (size > dest_len + 1)
 	{
-		dest[dest_length + j] = src[j];
-		j++;
+		while (src[i] && (dest_len + i) < (size - 1))
+		{
+			dest[dest_len + i] = src[i];
+			i++;
+		}
 	}
-	dest[dest_length + j] = '\0';
-	return (dest_length + source_length);
+	dest[dest_len + i] = 0;
+	return (dest_len + src_len);
 }
 
 /* #include <stdio.h>

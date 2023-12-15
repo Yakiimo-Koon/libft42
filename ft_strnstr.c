@@ -6,30 +6,32 @@
 /*   By: klefranc <klefranc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/19 13:07:08 by kevin             #+#    #+#             */
-/*   Updated: 2023/12/06 12:43:26 by klefranc         ###   ########.fr       */
+/*   Updated: 2023/12/15 11:52:01 by klefranc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strnstr(const char *str, const char *needle, size_t len)
+char	*ft_strnstr(const char *big, const char *little, size_t len)
 {
 	size_t	i;
 	size_t	j;
 
+	if ((big == NULL || little == NULL) && !len)
+		return (NULL);
+	if (!*little)
+		return ((char *)big);
 	i = 0;
-	if (needle[0] == '\0' || len == 0)
-		return ((char *)str);
-	while (str[i] && i < len)
+	while (big[i] && i < len)
 	{
 		j = 0;
-		while (str[i + j] == needle[j] && needle[j] \
-					&& str[i + j] && i + j < len)
-		{
+		while (big[i + j]
+			&& little[j]
+			&& big[i + j] == little[j]
+			&& i + j < len)
 			j++;
-			if (needle[j] == '\0')
-				return ((char *)str + i);
-		}
+		if (!little[j])
+			return ((char *)(big + i));
 		i++;
 	}
 	return (NULL);
