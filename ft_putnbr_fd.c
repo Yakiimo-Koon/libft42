@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: klefranc <klefranc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/11/21 16:33:29 by klefranc          #+#    #+#             */
-/*   Updated: 2023/11/23 12:53:29 by klefranc         ###   ########.fr       */
+/*   Created: 2023/12/21 11:53:36 by klefranc          #+#    #+#             */
+/*   Updated: 2023/12/21 11:58:40 by klefranc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,14 +31,3 @@ void	ft_putnbr_fd(int n, int fd)
 	else
 		ft_putchar_fd((n + 48), fd);
 }
-
-/* int main(int argc, char *argv[]) {
-    if (argc != 2) {
-        write(2, "Usage: ./program_name <number>\n", 30);
-        return 1;
-    }
-    int number = atoi(argv[1]);
-    ft_putnbr_fd(number, 1);
-    return 0;
-}
- */

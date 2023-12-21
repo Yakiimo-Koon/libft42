@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: klefranc <klefranc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/11/16 09:00:13 by klefranc          #+#    #+#             */
-/*   Updated: 2023/12/15 11:51:32 by klefranc         ###   ########.fr       */
+/*   Created: 2023/12/21 11:53:54 by klefranc          #+#    #+#             */
+/*   Updated: 2023/12/21 11:55:06 by klefranc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,17 +37,16 @@ size_t	ft_strlcat(char *dest, const char *src, size_t size)
 	return (dest_len + src_len);
 }
 
-/* #include <stdio.h>
+/*  int main() {
+ 	#include <stdio.h>
 
-int main()
-{
-    char destination[20] = "Hello, ";
-    const char *source = "World!";
-    
-    size_t length = ft_strlcat(destination, source, sizeof(destination));
-    
-    printf("Chaîne concaténée : %s\n", destination);
-    printf("Longueur de la chaîne concaténée : %zu\n", length);
+     char dest[20] = "Hello, ";
+     const char *src = "world!";
+     size_t size = sizeof(dest);
 
-    return 0;
+     size_t result = ft_strlcat(dest, src, size);
+     printf("Concatenated String: %s\n", dest);
+     printf("Result: %zu\n", result);
+
+     return 0;
 } */

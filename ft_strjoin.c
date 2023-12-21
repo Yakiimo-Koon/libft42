@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: klefranc <klefranc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/11/20 11:50:17 by kevin             #+#    #+#             */
-/*   Updated: 2023/12/15 10:09:34 by klefranc         ###   ########.fr       */
+/*   Created: 2023/12/21 11:53:51 by klefranc          #+#    #+#             */
+/*   Updated: 2023/12/21 11:55:08 by klefranc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,10 +38,12 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	return (str);
 }
 
-/* #include <stdio.h>
+/*  int	main(void)
+ {
+ 	#include <stdio.h>
+ 	#include <string.h>
 
-int main(int argc, char **argv)
-{
-	printf("%s\n", ft_strjoin(argc, argv, "---"));
-	return 0;
-} */
+ 	// printf("Original: %p\n", strjoin(5, 5));
+ 	printf("Result: %s\n", ft_strjoin("Hello, ", "world !"));
+ 	return (0);
+ } */

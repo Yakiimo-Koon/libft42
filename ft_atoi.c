@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: klefranc <klefranc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/11/16 07:39:44 by klefranc          #+#    #+#             */
-/*   Updated: 2023/11/23 14:24:22 by klefranc         ###   ########.fr       */
+/*   Created: 2023/12/21 11:52:53 by klefranc          #+#    #+#             */
+/*   Updated: 2023/12/21 11:55:31 by klefranc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,3 +37,15 @@ int	ft_atoi(const char *str)
 	}
 	return (sgn * res);
 }
+
+/*  int	main(int argc, char **argv)
+{
+	#include <stdio.h>
+	#include <string.h>
+	if (argc > 1)
+	{
+ 		printf("Original: %d\n", atoi(argv[1]));
+ 		printf("Result: %d\n", ft_atoi(argv[1]));
+ 	}
+ 	return (0);
+} */

@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: klefranc <klefranc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/11/08 16:35:26 by klefranc          #+#    #+#             */
-/*   Updated: 2023/11/23 14:12:40 by klefranc         ###   ########.fr       */
+/*   Created: 2023/12/21 11:53:07 by klefranc          #+#    #+#             */
+/*   Updated: 2023/12/21 11:57:53 by klefranc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,5 +14,8 @@
 
 int	ft_isascii(int c)
 {
-	return (c >= 0 && c <= 127);
+	unsigned int	i;
+
+	i = (unsigned int)c;
+	return (i <= 127);
 }

@@ -5,19 +5,19 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: klefranc <klefranc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/11/08 16:14:46 by klefranc          #+#    #+#             */
-/*   Updated: 2023/11/23 12:55:36 by klefranc         ###   ########.fr       */
+/*   Created: 2023/12/21 11:53:59 by klefranc          #+#    #+#             */
+/*   Updated: 2023/12/21 11:59:57 by klefranc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
-
-int	ft_strlen(const char *str)
+int	ft_strlen(char	*str)
 {
 	int	i;
 
 	i = 0;
-	while (str[i] != '\0')
+	while (str[i] != 0)
+	{
 		i++;
+	}
 	return (i);
 }

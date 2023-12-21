@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: klefranc <klefranc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/11/20 12:46:43 by kevin             #+#    #+#             */
-/*   Updated: 2023/12/15 12:05:22 by klefranc         ###   ########.fr       */
+/*   Created: 2023/12/21 11:54:15 by klefranc          #+#    #+#             */
+/*   Updated: 2023/12/21 11:54:55 by klefranc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,26 +39,12 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	return (str);
 }
 
-/* #include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
+/*  int	main(void)
+ {
+ 	#include <stdio.h>
+ 	#include <string.h>
 
-int main() {
-    const char *originalString = "Hello, World!";
-
-    unsigned int start = 7;
-    size_t len = 5;
-
-    char *substring = ft_substr(originalString, start, len);
-
-    if (substring != NULL) {
-        printf("Original String: %s\n", originalString);
-        printf("Substring: %s\n", substring);
-
-        free(substring);
-    } else {
-        printf("Allocation failed.\n");
-    }
-
-    return 0;
-} */
+ 	printf("Original: %s\n", substr("Bonjour salut les gars", 3, 10));
+ 	printf("Result: %s\n", ft_substr("Bonjour salut les gars", 3, 10));
+ 	return (0);
+ } */

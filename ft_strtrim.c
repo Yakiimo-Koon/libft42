@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: klefranc <klefranc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/11/21 17:00:15 by klefranc          #+#    #+#             */
-/*   Updated: 2023/11/23 13:05:41 by klefranc         ###   ########.fr       */
+/*   Created: 2023/12/21 11:54:12 by klefranc          #+#    #+#             */
+/*   Updated: 2023/12/21 11:55:35 by klefranc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,22 +14,33 @@
 
 char	*ft_strtrim(char const *s1, char const *set)
 {
-	size_t	front;
-	size_t	rear;
+	size_t	start;
+	size_t	end;
 	char	*str;
 
 	str = 0;
-	if (s1 != 0 && set != 0)
+	if (s1 && set)
 	{
-		front = 0;
-		rear = ft_strlen(s1);
-		while (s1[front] && ft_strchr(set, s1[front]))
-			front++;
-		while (s1[rear - 1] && ft_strchr(set, s1[rear - 1]) && rear > front)
-			rear--;
-		str = (char *)malloc(sizeof(char) * (rear - front + 1));
-		if (str)
-			ft_strlcpy(str, &s1[front], rear - front + 1);
+		start = 0;
+		end = ft_strlen(s1);
+		while (s1[start] && ft_strchr(set, s1[start]))
+			start++;
+		while (s1[end - 1] && ft_strchr(set, s1[end - 1]) && end > start)
+			end--;
+		str = (char *)malloc(sizeof(char) * (end - start + 1));
+		if (!str)
+			return (NULL);
+		ft_strlcpy(str, s1 + start, (end - start + 1));
 	}
 	return (str);
 }
+
+/*  int	main(void)
+ {
+ 	#include <stdio.h>
+ 	#include <string.h>
+
+// 	// printf("Original: %p\n", strjoin(5, 5));
+// 	printf("Result: %s\n", ft_strtrim("yocoucouol", "yolo"));
+// 	return (0);
+// } */

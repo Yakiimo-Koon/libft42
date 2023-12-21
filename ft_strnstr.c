@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: klefranc <klefranc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/11/19 13:07:08 by kevin             #+#    #+#             */
-/*   Updated: 2023/12/15 11:52:01 by klefranc         ###   ########.fr       */
+/*   Created: 2023/12/21 11:54:07 by klefranc          #+#    #+#             */
+/*   Updated: 2023/12/21 11:55:01 by klefranc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,24 +36,13 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 	}
 	return (NULL);
 }
-/* #include <stdio.h>
 
-int main(void)
-{
-    const char *str = "Hello, World!";
-    const char *needle = "World";
-    size_t len = 13; // Adjust the length as needed
+// int	main(void)
+// {
+// 	#include <stdio.h>
+// 	#include <string.h>
 
-    char *result = ft_strnstr(str, needle, len);
-
-    if (result)
-    {
-        printf("Needle found at position: %ld\n", result - str);
-    }
-    else
-    {
-        printf("Needle not found in the str.\n");
-    }
-
-    return 0;
-} */
+// 	printf("Original: %s\n", strstr("Bonjour comment tu vas ?", "tu"));
+// 	printf("Result: %s\n", ft_strnstr("Bonjour comment tu vas ?", "tu", 18));
+// 	return (0);
+// }

@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: klefranc <klefranc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/11/16 07:41:19 by klefranc          #+#    #+#             */
-/*   Updated: 2023/12/15 10:11:24 by klefranc         ###   ########.fr       */
+/*   Created: 2023/12/21 11:53:23 by klefranc          #+#    #+#             */
+/*   Updated: 2023/12/21 11:57:40 by klefranc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,17 +23,3 @@ void	*ft_memcpy(void *dst, const void *src, size_t n)
 		*(unsigned char *)(dst + i++) = *(unsigned char *)(src++);
 	return (dst);
 }
-
-/*  #include <stdio.h>
-int main()
-{
-	const char src[] = "Hello, my memcpy!";
-	char dest[20];
-
-	ft_memcpy(dest, src, sizeof(src));
-	dest[sizeof(src) - 1] = '\0';
-
-	printf("Source: %s\n", src);
-    printf("Destination: %s\n", dest);
-	return 0;
-} */

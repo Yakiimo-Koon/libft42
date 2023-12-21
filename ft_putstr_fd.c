@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: klefranc <klefranc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/11/20 14:02:26 by kevin             #+#    #+#             */
-/*   Updated: 2023/12/06 12:51:47 by klefranc         ###   ########.fr       */
+/*   Created: 2023/12/21 11:53:38 by klefranc          #+#    #+#             */
+/*   Updated: 2023/12/21 11:55:36 by klefranc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,8 +26,8 @@ void	ft_putstr_fd(char *s, int fd)
 	}
 }
 
-/* int main(int argc, char const *argv[])
-{
-	ft_putstr_fd("salution tout le monde !!", 1);
-	return 0;
-} */
+/*  int	main(void)
+ {
+	ft_putstr_fd("soleil\n", 1);
+	return (0);
+ } */

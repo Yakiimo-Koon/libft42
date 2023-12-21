@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: klefranc <klefranc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/11/21 16:32:40 by klefranc          #+#    #+#             */
-/*   Updated: 2023/12/15 11:48:49 by klefranc         ###   ########.fr       */
+/*   Created: 2023/12/21 11:53:00 by klefranc          #+#    #+#             */
+/*   Updated: 2023/12/21 11:55:29 by klefranc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,13 +25,12 @@ void	*ft_calloc(size_t count, size_t size)
 	return (element);
 }
 
-/* void	*ft_calloc(size_t count, size_t size)
-{
-	void	*ptr;
+/*  int	main(void)
+ {
+ 	#include <stdio.h>
+ 	#include <string.h>
 
-	ptr = (void *)malloc(count * size);
-	if (!ptr)
-		return (NULL);
-	ft_bzero(ptr, count);
-	return (ptr);
-} */
+ 	printf("Original: %p\n", calloc(5, 5));
+ 	printf("Result: %p\n", ft_calloc(5, 5));
+ 	return (0);
+ } */

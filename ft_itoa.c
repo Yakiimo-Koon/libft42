@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: klefranc <klefranc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/11/21 16:32:23 by klefranc          #+#    #+#             */
-/*   Updated: 2023/12/15 10:13:05 by klefranc         ###   ########.fr       */
+/*   Created: 2023/12/21 11:53:14 by klefranc          #+#    #+#             */
+/*   Updated: 2023/12/21 11:57:42 by klefranc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -59,14 +59,11 @@ char	*ft_itoa(int n)
 	}
 	return (a);
 }
-/* int main()
-{
-    int number = -12345;
-    char* str = ft_itoa(number);
 
-    printf("Entier : %d, Chaîne : %s\n", number, str);
+/*  int	main(void)
+ {
+ 	#include <stdio.h>
 
-    free(str);
-
-    return 0;
-} */
+ 	printf("Result: %s\n", ft_itoa(-2147483648));
+ 	return (0);
+ } */

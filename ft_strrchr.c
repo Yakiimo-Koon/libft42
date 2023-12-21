@@ -5,42 +5,33 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: klefranc <klefranc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/11/10 11:19:50 by kevin             #+#    #+#             */
-/*   Updated: 2023/12/15 10:07:33 by klefranc         ###   ########.fr       */
+/*   Created: 2023/12/21 11:54:09 by klefranc          #+#    #+#             */
+/*   Updated: 2023/12/21 11:55:45 by klefranc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strrchr(const char *s, int c)
+char	*ft_strrchr(const char *string, int searchedChar)
 {
-	int		i;
+	int	i;
 
-	i = ft_strlen(s);
-	while (i > 0)
+	i = ft_strlen(string);
+	while (i >= 0)
 	{
-		if (s[i] == (char)c)
-			return ((char *)s + i);
+		if (string[i] == (char)searchedChar)
+			return ((char *)(string + i));
 		i--;
 	}
-	if (s[i] == (char)c)
-		return ((char *)s + i);
 	return (NULL);
 }
 
-/* #include <stdio.h>
+// int	main(void)
+// {
+// 	#include <stdio.h>
+// 	#include <string.h>
 
-int main() {
-    const char* myString = "Hello, World!";
-    char searchChar = 'o';
-
-    char* result = ft_strrchr(myString, searchChar);
-
-    if (result != NULL) {
-        printf("Caractère trouvé à la position : %ld\n", result - myString);
-    } else {
-        printf("Caractère non trouvé dans la chaîne.\n");
-    }
-
-    return 0;
-} */
+// 	printf("Original: %s\n", strrchr("Bonjour salut les gars", 'a'));
+// 	printf("Result: %s\n", ft_strrchr("Bonjour salut les gars", 'a'));
+// 	return (0);
+// }

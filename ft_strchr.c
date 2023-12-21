@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: klefranc <klefranc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/11/10 11:13:05 by kevin             #+#    #+#             */
-/*   Updated: 2023/12/15 11:51:06 by klefranc         ###   ########.fr       */
+/*   Created: 2023/12/21 11:53:43 by klefranc          #+#    #+#             */
+/*   Updated: 2023/12/21 11:55:48 by klefranc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,19 +28,10 @@ char	*ft_strchr(const char *string, int searchedChar)
 	return (NULL);
 }
 
-/* #include <stdio.h>
+/*  int	main(void)
+ {
+ 	#include <stdio.h>
 
-int main() {
-    const char* myString = "Hello, World!";
-    char searchChar = 'o';
-
-    char* result = strchr(myString, searchChar);
-
-    if (result != NULL) {
-        printf("Caractère trouvé à la position : %ld\n", result - myString);
-    } else {
-        printf("Caractère non trouvé dans la chaîne.\n");
-    }
-
-    return 0;
-} */
+ 	printf("Result: %s\n", ft_strchr("les pasta de la mama", 'a'));
+ 	return (0);
+ } */

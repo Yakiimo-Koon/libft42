@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: klefranc <klefranc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/11/21 16:33:00 by klefranc          #+#    #+#             */
-/*   Updated: 2023/12/15 10:11:58 by klefranc         ###   ########.fr       */
+/*   Created: 2023/12/21 11:53:17 by klefranc          #+#    #+#             */
+/*   Updated: 2023/12/21 11:55:18 by klefranc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,38 +30,12 @@ void	*ft_memchr(const void *s, int c, size_t n)
 	return (0);
 }
 
-/* void	*ft_memchr(const void *memoryBlock, int SearchedChar, size_t size)
-{
-	unsigned char	*p;
+// int	main(void)
+// {
+// 	#include <stdio.h>
+// 	#include <string.h>
 
-	*p = memoryBlock;
-	while (size > 0)
-	{
-		if (*p == (unsigned char)SearchedChar)
-		{
-			return ((void *)p);
-		}
-		p++;
-		size--;
-	}
-	return (NULL);
-} */
-
-/* int main() {
-    // Example usage of ft_memchr
-    const char* str = "Hello, World!";
-    char target = 'W';
-
-    // Search for 'W' in the string
-    void* result = ft_memchr(str, target, 13);
-
-    // Check if the character was found
-    if (result != NULL) {
-        printf("Character '%c' found at index %zu\n",
-				target, (size_t)((char*)result - str));
-    } else {
-        printf("Character '%c' not found\n", target);
-    }
-
-    return 0;
-} */
+// 	printf("Original: %p\n", memchr("Bonjour", 'n', 5));
+// 	printf("Result: %p\n", ft_memchr("Bonjour", 'n', 5));
+// 	return (0);
+// }
